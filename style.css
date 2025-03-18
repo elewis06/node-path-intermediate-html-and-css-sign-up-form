@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'agu-display';
+    src: url('./assets/Agu_Display/AguDisplay-Regular-VariableFont_MORF.ttf');
+}
+
+/************************* CSS RESET *************************/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+*/
+#root, #__next {
+    isolation: isolate;
+}
+
+/*************************************************************/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* font-family: 'agu-display', Arial, Helvetica, sans-serif; */
+}
+
+.page-container {
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    background: white;
+    width: 70vw;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-sidebar-container {
+    background: url('./assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-sidebar-content {
+    margin-top: 30vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    /* margin: auto; */
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img {
+    width: 95px;
+    min-width: 95px;
+}
+
+.hero {
+    font-family: 'agu-display', Arial, Helvetica, sans-serif;
+    font-size: 96px;
+    color: white;
+    /* margin: auto; */
+}
+
+.img-credit {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.img-credit > a {
+    color: white;
+}
+
+.page-content-container {
+    background: #F9FAFB;
+    min-width: 600px;
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-pretext {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 0 50px 0 50px;
+}
+
+.account-registration-form {
+    margin: 50px 0 30px 0;
+}
+
+.account-registration-form input {
+    width: 250px;
+}
+
+.form-controls-container {
+    background: white;
+    box-shadow: 0 4px 5px 0 #DCDCDD;
+    clip-path: inset(0 0px -9px 0);
+    padding: 20px 50px 40px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.controls-row {
+    display: flex;
+    gap: 80px;
+}
+
+.control-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #2B313F;
+    letter-spacing: 1.5px;
+}
+
+.control-input {
+    outline: none;
+    border: solid;
+    border-color: #E5E6EB;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.control-input:focus {
+    outline: none;
+    border: solid;
+    border-color: blue;
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #DCDCDD;
+}
+
+#password:invalid, #confirm_password:invalid {
+    border-color: red;
+}
+
+.form-submit-button {
+    background-color: #5F6C4B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 210px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.account-query-text {
+    padding-left: 50px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #5F6C4B;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .image-sidebar-container {
+        display: none;
+    }
+
+    .page-content-container {
+        min-width: auto;
+    }
+}

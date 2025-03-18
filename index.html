@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" value="width=device-width, initial-scale=1.0">
+        <title>Odin Sign Up Form</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <script src="./javascript.js" defer></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="page">
+                <div class="image-sidebar-container">
+                    <div class="image-sidebar-content">
+                        <div class="logo"><img src="./assets/odin-lined-logo.png" alt="ODIN logo"></div>
+                        <div class="hero">ODIN</div>
+                    </div>
+                    <div class="img-credit">Photo by&nbsp;<a href="https://unsplash.com/@asci_en">Artem R</a>&nbsp;on&nbsp;<a href="https://unsplash.com/">Unsplash</a></div>
+                </div>
+                <div class="page-content-container">
+                    <div class="page-content">
+                        <div class="form-container">
+                            <div class="form-content">
+                                <p class="form-pretext">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                                <p class="form-pretext">You <em>know</em> you want to.</p>
+                                <form class="account-registration-form" action="/my-action-url" method="POST">
+                                    <div class="form-controls-container">
+                                        <h2>Let's do this!</h2>
+                                        <div class="name-controls controls-row">
+                                            <div class="first-name-control">
+                                                <label class="control-label" for="first_name">FIRST NAME</label>
+                                                <input class="control-input" type="text" id="first_name" name="first_name">
+                                            </div>
+                                            <div class="last-name-control">
+                                                <label class="control-label" for="last_name">LAST NAME</label>
+                                                <input class="control-input" type="text" id="last_name" name="last_name">
+                                            </div>
+                                        </div>
+                                        <div class="contact-info-controls controls-row">
+                                            <div class="email-control">
+                                                <label class="control-label" for="email">EMAIL</label>
+                                                <input class="control-input" type="email" id="email" name="email">
+                                            </div>
+                                            <div class="phone-number-control">
+                                                <label class="control-label" for="phone_number">PHONE NUMBER</label>
+                                                <input class="control-input" type="tel" id="phone_number" name="phone_number">
+                                            </div>
+                                        </div>
+                                        <div class="password-controls controls-row">
+                                            <div class="password-control">
+                                                <label class="control-label" for="password">PASSWORD</label>
+                                                <input class="control-input" type="password" id="password" name="password">
+                                            </div>
+                                            <div class="confirm-password-control">
+                                                <label class="control-label" for="confirm_password">CONFIRM PASSWORD</label>
+                                                <input class="control-input" type="password" id="confirm_password" name="confirm_password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="form-submit-button" type="submit">Create Account</button>
+                                </form>
+                                <p class="account-query-text">Already have an account? <a class="login-link" href="">Log in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
